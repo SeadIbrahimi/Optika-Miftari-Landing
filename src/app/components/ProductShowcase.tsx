@@ -1,22 +1,38 @@
-import { motion } from 'motion/react';
-import { useInView } from '@/app/hooks/useInView';
+import { motion } from "motion/react";
+import { useInView } from "@/app/hooks/useInView";
 
-import stylishGlasses1 from '../../assets/stylish_glasses_1.jpeg';
-import stylishGlasses2 from '../../assets/stylish_glasses_2.jpeg';
-import glassesImage from '../../assets/glasses_sun.jpeg';
-import labImage from '../../assets/lab.jpeg';
-import lensesImage from '../../assets/lenses.jpeg';
+import stylishGlasses1 from "../../assets/stylish_glasses_1.jpeg";
+import stylishGlasses2 from "../../assets/stylish_glasses_2.jpeg";
+import glassesImage from "../../assets/glasses_sun.jpeg";
+import labImage from "../../assets/lab.jpeg";
+import lensesImage from "../../assets/lenses.jpeg";
 
 const showcaseImages = [
-  { src: stylishGlasses1, alt: 'High Index Stylish Glasses', label: 'High Index Lenses' },
-  { src: stylishGlasses2, alt: 'Premium Dioptric Eyewear', label: 'Premium Dioptric' },
-  { src: glassesImage, alt: 'Designer Sunglasses', label: 'Designer Sunglasses' },
-  { src: labImage, alt: 'Optical Laboratory', label: 'Lens Laboratory' },
-  { src: lensesImage, alt: 'Precision Lenses', label: 'Precision Optics' },
+  {
+    src: stylishGlasses1,
+    alt: "High Index Stylish Glasses",
+    label: "High Index Lenses",
+  },
+  {
+    src: stylishGlasses2,
+    alt: "Premium Dioptric Eyewear",
+    label: "Premium Dioptric",
+  },
+  {
+    src: glassesImage,
+    alt: "Designer Sunglasses",
+    label: "Designer Sunglasses",
+  },
+  { src: labImage, alt: "Optical Laboratory", label: "Lens Laboratory" },
+  { src: lensesImage, alt: "Precision Lenses", label: "Precision Optics" },
 ];
 
 // Duplicate array for seamless infinite scroll
-const duplicatedImages = [...showcaseImages, ...showcaseImages, ...showcaseImages];
+const duplicatedImages = [
+  ...showcaseImages,
+  ...showcaseImages,
+  ...showcaseImages,
+];
 
 export function ProductShowcase() {
   const [ref, isInView] = useInView({ threshold: 0.1 });
@@ -45,8 +61,8 @@ export function ProductShowcase() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            From high-dioptric precision lenses to stylish designer frames,
-            we deliver optical excellence for every vision need.
+            From high-dioptric precision lenses to stylish designer frames, we
+            deliver optical excellence for every vision need.
           </p>
         </motion.div>
       </div>
@@ -102,10 +118,6 @@ export function ProductShowcase() {
           ))}
         </div>
       </div>
-
-      {/* Gradient Fade Edges */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-50 to-transparent z-10" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
     </section>
   );
 }
