@@ -100,18 +100,17 @@ export function AboutSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="flex justify-evenly flex-col md:flex-row items-center gap-6"
           >
             <img
               src={labImage}
               alt="Optical Lab"
-              className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover rounded-xl shadow-lg"
+              className="h-48 w-full md:h-64 lg:h-80 object-cover rounded-xl shadow-lg"
             />
-            <img
+            {/* <img
               src={glassesImage}
               alt="Premium Eyewear"
               className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover rounded-xl shadow-lg"
-            />
+            /> */}
           </motion.div>
         </div>
 

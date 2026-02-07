@@ -52,7 +52,7 @@ export function VideoPresentation() {
         >
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-teal-500 text-white shadow-lg shadow-cyan-500/30 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-medium">
             <Sparkles className="w-4 h-4 sm:w-5 sm:h-5" />
-            <span className="text-sm sm:text-base">17.0 Dioptry Demo</span>
+            <span className="text-sm sm:text-base">High Index Lens Demo</span>
           </div>
         </motion.div>
 
@@ -90,8 +90,9 @@ export function VideoPresentation() {
             className="mt-4 sm:mt-6 text-center px-2"
           >
             <p className="text-gray-400 text-sm sm:text-base">
-              See how we craft high-index lenses for extreme prescriptions (17.0
-              dioptry) maintaining both aesthetics and visual clarity.
+              See how we craft high-index lenses for extreme prescriptions
+              (-17.0 sph SHMC dioptry) maintaining both aesthetics and visual
+              clarity.
             </p>
           </motion.div>
         </motion.div>
