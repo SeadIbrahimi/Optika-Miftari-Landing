@@ -2,8 +2,7 @@ import { motion } from "motion/react";
 import { useInView } from "@/app/hooks/useInView";
 import { Building2, Target, Rocket, Award } from "lucide-react";
 import { AnimatedLines } from "@/app/components/AnimatedLines";
-import labImage from "../../assets/lab.jpeg";
-import glassesImage from "../../assets/glasses_sun.jpeg";
+import labImage from "../../assets/lab.jpg";
 
 const highlights = [
   {

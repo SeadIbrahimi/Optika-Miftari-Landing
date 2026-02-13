@@ -4,7 +4,7 @@ import { AnimatedGeometricPattern } from "@/app/components/AnimatedGeometricPatt
 import { AnimatedLines } from "@/app/components/AnimatedLines";
 import { FloatingElements } from "@/app/components/FloatingElements";
 import logoImage from "../../assets/Logo.png";
-import presentationVideo from "../../assets/presentation.mp4";
+import presentationVideo from "../../assets/08.02.mp4";
 
 export function HeroSection() {
   return (
@@ -24,7 +24,7 @@ export function HeroSection() {
       <div className="!hidden md:block absolute bottom-1/4 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-gradient-to-br from-emerald-200 to-teal-200 rounded-full mix-blend-multiply blur-3xl opacity-30 animate-blob animation-delay-4000 pointer-events-none" />
 
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 py-12 lg:py-16">
-        <div className="grid lg:grid-cols-3 gap-10 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-3 gap-10 lg:gap-1 items-center">
           {/* LEFT CONTENT */}
           <div className="text-center lg:col-span-2 lg:text-left order-1 items-center">
             <motion.div
@@ -100,7 +100,7 @@ export function HeroSection() {
                 muted
                 loop
                 playsInline
-                className="w-full h-auto object-cover rounded-2xl"
+                className="w-full h-auto lg:w-[85%] object-cover rounded-2xl"
               >
                 <source src={presentationVideo} type="video/mp4" />
               </video>

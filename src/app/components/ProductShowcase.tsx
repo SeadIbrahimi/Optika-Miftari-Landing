@@ -5,30 +5,30 @@ import stylishGlasses1 from "../../assets/stylish_glasses_1.jpeg";
 import stylishGlasses2 from "../../assets/stylish_glasses_2.jpeg";
 import glassesImage from "../../assets/glasses_sun.jpeg";
 import labImage from "../../assets/lab.jpeg";
-import lensesImage from "../../assets/lenses.jpeg";
+import lensesImage from "../../assets/Img1.jpg";
+import img1 from "../../assets/img1.jpg";
+import img2 from "../../assets/img2.jpg";
+import img3 from "../../assets/img3.jpg";
+import img4 from "../../assets/img4.jpg";
+import img5 from "../../assets/img5.jpg";
+import img6 from "../../assets/img6.jpg";
+import img7 from "../../assets/img7.jpg";
 
 const showcaseImages = [
-  {
-    src: stylishGlasses1,
-    alt: "High Index Stylish Glasses",
-    label: "High Index Lenses",
-  },
-  {
-    src: stylishGlasses2,
-    alt: "Premium Dioptric Eyewear",
-    label: "Premium Dioptric",
-  },
-  {
-    src: glassesImage,
-    alt: "Designer Sunglasses",
-    label: "Designer Sunglasses",
-  },
-  { src: labImage, alt: "Optical Laboratory", label: "Lens Laboratory" },
-  { src: lensesImage, alt: "Precision Lenses", label: "Precision Optics" },
+  { src: img1, alt: "Image 1", label: "Image 1" },
+  { src: img2, alt: "Image 2", label: "Image 2" },
+  { src: img3, alt: "Image 3", label: "Image 3" },
+  { src: img4, alt: "Image 4", label: "Image 4" },
+  { src: img5, alt: "Image 5", label: "Image 5" },
+  { src: img6, alt: "Image 6", label: "Image 6" },
+  { src: img7, alt: "Image 7", label: "Image 7" },
 ];
 
 // Duplicate array for seamless infinite scroll
 const duplicatedImages = [
+  ...showcaseImages,
+  ...showcaseImages,
+  ...showcaseImages,
   ...showcaseImages,
   ...showcaseImages,
   ...showcaseImages,
@@ -81,38 +81,6 @@ export function ProductShowcase() {
                   alt={image.alt}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <span className="text-white font-medium text-sm bg-teal-600/90 px-3 py-1 rounded-full">
-                    {image.label}
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Infinite Scroll Gallery - Row 2 (Right to Left) */}
-      <div className="relative">
-        <div className="flex animate-scroll-right">
-          {[...duplicatedImages].reverse().map((image, index) => (
-            <div
-              key={`row2-${index}`}
-              className="flex-shrink-0 w-72 h-48 mx-3 group"
-            >
-              <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <span className="text-white font-medium text-sm bg-cyan-600/90 px-3 py-1 rounded-full">
-                    {image.label}
-                  </span>
-                </div>
               </div>
             </div>
           ))}

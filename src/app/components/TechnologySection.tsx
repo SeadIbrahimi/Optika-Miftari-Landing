@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { useInView } from "@/app/hooks/useInView";
 import { Cpu, Database, Workflow, BarChart3 } from "lucide-react";
 import { AnimatedLines } from "@/app/components/AnimatedLines";
-import lensImage from "../../assets/lenses.jpeg";
+import lensImage from "../../assets/Img1.jpg";
 
 const technologies = [
   {
@@ -48,15 +48,13 @@ export function TechnologySection() {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="order-2 lg:order-1"
+            className="order-2 lg:order-1 h-full"
           >
-            <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src={lensImage}
-                alt="Optical Lenses"
-                className="w-full h-auto"
-              />
-            </div>
+            <img
+              src={lensImage}
+              alt="Optical Lenses"
+              className="w-full h-full object-cover rounded-2xl shadow-lg"
+            />
           </motion.div>
 
           <motion.div
