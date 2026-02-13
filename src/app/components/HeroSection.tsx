@@ -4,7 +4,7 @@ import { AnimatedGeometricPattern } from "@/app/components/AnimatedGeometricPatt
 import { AnimatedLines } from "@/app/components/AnimatedLines";
 import { FloatingElements } from "@/app/components/FloatingElements";
 import logoImage from "../../assets/Logo.png";
-import presentationVideo from "../../assets/presentation.mp4";
+import presentationVideo1 from "../../assets/presentation.mp4";
 
 export function HeroSection() {
   return (
@@ -102,7 +102,7 @@ export function HeroSection() {
                 playsInline
                 className="w-full h-auto lg:w-[85%] object-cover rounded-2xl"
               >
-                <source src={presentationVideo} type="video/mp4" />
+                <source src={presentationVideo1} type="video/mp4" />
               </video>
 
               <div className="!hidden absolute inset-0 rounded-2xl shadow-[inset_0_0_60px_rgba(0,0,0,0.05)] pointer-events-none" />
