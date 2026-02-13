@@ -5,7 +5,7 @@ import stylishGlasses1 from "../../assets/stylish_glasses_1.jpeg";
 import stylishGlasses2 from "../../assets/stylish_glasses_2.jpeg";
 import glassesImage from "../../assets/glasses_sun.jpeg";
 import labImage from "../../assets/lab.jpeg";
-import img1 from "../../assets/img1.jpg";
+import img1 from "../../assets/image.jpg";
 import img2 from "../../assets/img2.jpg";
 import img3 from "../../assets/img3.jpg";
 import img4 from "../../assets/img4.jpg";

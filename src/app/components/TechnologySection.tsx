@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { useInView } from "@/app/hooks/useInView";
 import { Cpu, Database, Workflow, BarChart3 } from "lucide-react";
 import { AnimatedLines } from "@/app/components/AnimatedLines";
-import lensImage from "../../assets/Img1.jpg";
+import lensImage from "../../assets/image.jpg";
 
 const technologies = [
   {
