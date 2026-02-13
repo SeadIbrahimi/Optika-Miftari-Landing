@@ -4,7 +4,7 @@ import { AnimatedGeometricPattern } from "@/app/components/AnimatedGeometricPatt
 import { AnimatedLines } from "@/app/components/AnimatedLines";
 import { FloatingElements } from "@/app/components/FloatingElements";
 import logoImage from "../../assets/Logo.png";
-import presentationVideo from "../../assets/pressenation.mov";
+import presentationVideo from "../../assets/pressenation1.mov";
 
 export function HeroSection() {
   return (
